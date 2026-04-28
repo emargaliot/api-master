@@ -6,6 +6,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { CORS_ORIGIN, PORT } from './config/env';
 
 async function bootstrap() {
+  
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     origin: CORS_ORIGIN || '*',
